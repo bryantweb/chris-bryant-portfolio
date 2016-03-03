@@ -79,8 +79,24 @@ header {
   position: relative;
 }
 
-header.portfolio {
+.portfolio header {
   background: url('images/chris-bryant-designer.jpg') no-repeat top center;
+}
+.services header {
+  background: url('images/services.jpg') no-repeat top center;
+}
+.about header {
+  background: url('images/about.jpg') no-repeat top center;
+}
+.contact header {
+  background: url('images/contact.jpg') no-repeat top center;
+}
+
+.portfolio header .header-content,
+.services header .header-content,
+.about header .header-content,
+.contact header .header-content {
+  padding-top: 140px;
 }
 
 header  .overlay {
@@ -129,7 +145,9 @@ header .profile-image:hover {
   font-size: 1.2em;
   font-weight: 300;
   text-shadow: 3px 3px 20px rgba(43, 49, 54, 0.5);
+  text-transform: capitalize;
 }
+
 
 .card {
   margin: 30px auto;
@@ -179,7 +197,7 @@ ul.skills {
     cursor: pointer;
 }
 
-/*CTA Section*/
+/*Testimonial Section*/
 .testimonial {
     width: 100%;
     background: #444;
@@ -209,19 +227,64 @@ ul.skills {
 }
 
 /*CTA Section*/
-section.cta {
+.cta {
     width: 100%;
     display: block;
-    background: #f6f6f9;
+    background: #56b5c9;
     padding: 100px 0;
     box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid #fff
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+    color:#fff;
 }
 
+.cta-contents p {
+    font-size: 40px;
+    max-width: 60%;
+    margin: 0 auto 2%;
+    font-weight: 700;
+}
+
+.cta-contents a {
+  padding: 15px 30px;
+  background: #3f8593;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-top:10px;
+  display: inline-block;
+  transition: all .2s;
+}
+
+.cta-contents a:hover {
+  background: #336b77;
+}
+
+/*CONTACT PAGE*/
+.narrow-container {
+  max-width: 50%;
+  font-size: 20px;
+  text-align: left;
+}
+
+.narrow-container p {
+    padding-top: 20px;
+}
+.narrow-container span {
+  font-size: 26px;
+  font-weight: 700;
+}
+.narrow-container span a {
+  color: #56b5c9;
+}
+
+/*FOOTER*/
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding: 60px 0 40px 20px;
+      background: #282E34;
 }
 
 footer .copyright {
@@ -292,6 +355,13 @@ a.social:hover {
     padding-top: 70px;
   }
 
+  .portfolio header .header-content,
+  .services header .header-content,
+  .about header .header-content,
+  .contact header .header-content {
+    padding-top: 160px;
+  }
+
   header .profile-image {
   margin-top: 50px; 
   width: 100px;
@@ -326,8 +396,7 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+    padding: 40px 20px;
   }
 
 }

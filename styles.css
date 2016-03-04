@@ -16,11 +16,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: #56b5c9;
+  transition: all .5s;
 }
 
 a:hover {
-  color: #6633ff;
+  color: #418897;
 }
 
 /* Section Styles */
@@ -44,6 +45,12 @@ a:hover {
   padding: 0;
 }
 
+.nav a {
+  color: #999;
+}
+.nav a:hover {
+  color: white;
+}
 .nav .name {
     display: block;
     margin-right: auto;
@@ -66,8 +73,6 @@ a:hover {
   color: white
 }
 
-
-
 header {
   text-align: center;
   background: url('images/kelowna-background.jpg') no-repeat top center;
@@ -80,20 +85,19 @@ header {
 }
 
 .portfolio header {
-  background: url('images/chris-bryant-designer.jpg') no-repeat top center;
-}
-.services header {
-  background: url('images/services.jpg') no-repeat top center;
+  background: url('images/portfolio.jpg') no-repeat top center;
+  background-size: cover;
 }
 .about header {
   background: url('images/about.jpg') no-repeat top center;
+  background-size: cover;
 }
 .contact header {
   background: url('images/contact.jpg') no-repeat top center;
+  background-size: cover;
 }
 
 .portfolio header .header-content,
-.services header .header-content,
 .about header .header-content,
 .contact header .header-content {
   padding-top: 140px;
@@ -233,8 +237,8 @@ ul.skills {
     background: #56b5c9;
     padding: 100px 0;
     box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid #fff;
-    margin-top: 40px;
+/*    border-top: 1px solid #fff;
+    margin-top: 40px; */
     color:#fff;
 }
 
@@ -263,9 +267,10 @@ ul.skills {
 
 /*CONTACT PAGE*/
 .narrow-container {
-  max-width: 50%;
+  max-width: 80%;
   font-size: 20px;
   text-align: left;
+  margin: 0 auto 80px;
 }
 
 .narrow-container p {
@@ -278,6 +283,66 @@ ul.skills {
 .narrow-container span a {
   color: #56b5c9;
 }
+
+/*PORTFOLIO STYLES*/
+  .portfolio-item {
+    margin: 0px auto 80px;
+    padding: 10px 40px 30px;
+    background: white;
+  }
+
+  .portfolio main {
+    margin: 80px 20px;
+  }
+  .column img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   border: 1px solid #c9cdcf;
+   background: #fff;
+   padding: 5px;
+  }
+        a.transparent-button {
+        border: 2px solid;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: inline-block;
+      }
+
+  @media screen and (min-width: 720px) {
+    /*portfolio*/
+      .column {
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        width: 30%;
+        margin-bottom: 4%;
+        overflow: hidden;
+        vertical-align: top;
+        box-shadow: 0 2px 0 #D9E1E7;
+        border-radius: 3px;
+        background: #fff;
+      }
+        .portfolio main {
+       margin: 20px auto;
+        }
+
+      .column img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .portfolio-item {
+        padding: 10px 40px 30px;
+        margin: 0px auto 30px;
+      }
+
+
+
+  }
+
 
 /*FOOTER*/
 footer {
@@ -337,66 +402,72 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
+      
+      .flex {
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: flex; 
+        max-width: 1200px;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        margin: 0 auto 80px;
+      }
 
-  header {
-    min-height: 500px;
-  }
+      .narrow-container {
+        max-width: 50%;
+        font-size: 20px;
+        text-align: left;
+        margin: 0 auto 80px;
+      }
 
-  header .header-content {
-    padding-top: 70px;
-  }
+      header {
+        min-height: 500px;
+      }
 
-  .portfolio header .header-content,
-  .services header .header-content,
-  .about header .header-content,
-  .contact header .header-content {
-    padding-top: 160px;
-  }
+      header .header-content {
+        padding-top: 70px;
+      }
 
-  header .profile-image {
-  margin-top: 50px; 
-  width: 100px;
-  height: 100px;
-  }
+      .portfolio header .header-content,
+      .about header .header-content,
+      .contact header .header-content {
+        padding-top: 160px;
+      }
 
-  .tag {
-    font-size: 60px;
-  } 
+      header .profile-image {
+        margin-top: 50px; 
+        width: 80px;
+        height: 80px;
+      }
 
-  .description {
-    font-size: 1.375em;
-  }
+      .tag {
+        font-size: 60px;
+      } 
 
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
-  }
+      .description {
+        font-size: 1.375em;
+      }
 
-  .card {
-  margin: 30px;
-  max-width: 500px;
-}
+      .nav {
+        max-width: 1200px;
+        padding: 0 30px;
+      }
 
-  main {
-    padding-top: 60px;
-  }
+      .card {
+        margin: 30px;
+        max-width: 500px;
+      }
 
-  main p {
-    line-height: 1.6em;
-  }
+      main {
+        padding-top: 60px;
+      }
 
-  footer {
-    font-size: 1.3em;
-    padding: 40px 20px;
-  }
+      main p {
+        line-height: 1.6em;
+      }
+
+      footer {
+        font-size: 1.3em;
+        padding: 40px 20px;
+      }
 
 }

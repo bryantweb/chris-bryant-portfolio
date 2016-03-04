@@ -15,7 +15,7 @@ Github project link: https://github.com/bryantweb/chris-bryant-portfolio
 * Included new image for the homepage background
 - Background image size less than 1MB
 * Personalized homepage text by changing the name, background and goals.
-* Adding links to your GitHub, Twitter and LinkedIn accounts.
+* Added links to your GitHub, Twitter and LinkedIn accounts.
 * Modified CSS for homepage profile image
 * Valid CSS
 * Valid HTML - No errors or warnings to show
